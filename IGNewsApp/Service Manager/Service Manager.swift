@@ -11,7 +11,7 @@ class ServiceManager {
     
     public static let shared = ServiceManager()
     
-    func newsServiceCall(completion: @escaping (NewsResponseModel) -> Void) {
+    func newsServiceCall(completion: @escaping (NewsResponseModel?) -> Void) {
         guard let url =  URL(string: "https://content.dailyfx.com/api/v1/dashboard") else {
             return
         }

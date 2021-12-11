@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum TypeOfNews: String {
+    case topNews            =   "Top News"
+    case dailyBriefings     =   "Daily Briefings"
+    case technicalAnalysis  =   "Technical Analysis"
+    case specialReport      =   "Special Report"
+}
