@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsDiscriptionViewController" customModule="IGNewsApp" customModuleProvider="target">
             <connections>
-                <outlet property="authorLabel" destination="uTH-nu-A5N" id="570-bM-QXt"/>
+                <outlet property="authorLabel" destination="Bn9-2f-8a7" id="mXz-E8-2kW"/>
                 <outlet property="newsDiscriptionLabel" destination="a4u-Dz-xUQ" id="Z77-yL-WEM"/>
                 <outlet property="newsImageView" destination="MJY-Db-BJv" id="9KE-VL-gCo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -25,15 +25,18 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="269"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4u-Dz-xUQ">
-                    <rect key="frame" x="16" y="329" width="382" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <rect key="frame" x="16" y="329" width="382" height="26.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTH-nu-A5N">
-                    <rect key="frame" x="0.0" y="832" width="414" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bn9-2f-8a7">
+                    <rect key="frame" x="0.0" y="830" width="414" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="r7u-n8-0He"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.85158981639999998" green="0.27058823529999998" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -41,15 +44,15 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MJY-Db-BJv" secondAttribute="trailing" id="1ad-i9-TAq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="uTH-nu-A5N" secondAttribute="bottom" id="7Y4-Nd-X8k"/>
                 <constraint firstItem="MJY-Db-BJv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="8UX-wg-frh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a4u-Dz-xUQ" secondAttribute="trailing" constant="16" id="DqO-Xt-duR"/>
                 <constraint firstItem="MJY-Db-BJv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JjC-53-hoQ"/>
-                <constraint firstItem="uTH-nu-A5N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZJi-k3-cq9"/>
                 <constraint firstItem="a4u-Dz-xUQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="b9C-4v-FI9"/>
                 <constraint firstItem="MJY-Db-BJv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="cAm-Y2-IOO"/>
                 <constraint firstItem="a4u-Dz-xUQ" firstAttribute="top" secondItem="MJY-Db-BJv" secondAttribute="bottom" constant="16" id="fCy-vC-iFf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uTH-nu-A5N" secondAttribute="trailing" id="hkF-8g-KaA"/>
+                <constraint firstItem="Bn9-2f-8a7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qHu-uv-BJx"/>
+                <constraint firstItem="Bn9-2f-8a7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uo5-Lt-Vu8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Bn9-2f-8a7" secondAttribute="bottom" constant="8" id="vPv-JT-aei"/>
             </constraints>
             <point key="canvasLocation" x="139" y="74"/>
         </view>

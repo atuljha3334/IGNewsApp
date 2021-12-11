@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var newsButtonThree: UIButton!
     @IBOutlet weak var newsButtonFour: UIButton!
     @IBOutlet weak var breakingNewsLabel: UILabel!
+    @IBOutlet weak var breakingNewsView: UIView!
     
     // MARK: - Variables
 
@@ -24,6 +25,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         newsServiceInvoke()
+        setupUI()
+    }
+    
+    // MARK: - SetupUI
+
+    private func setupUI() {
+        if !(newsData?.breakingNews == "" || newsData?.breakingNews == nil) {
+            breakingNewsView.isHidden = false
+        }
     }
     
     // MARK: - Service Call
@@ -32,7 +42,7 @@ class ViewController: UIViewController {
         ServiceManager.shared.newsServiceCall { result in
             self.newsData = result
             self.setupBreakingNews(data: self.newsData)
-            print(self.newsData)
+//            print(self.newsData)
         }
     }
     

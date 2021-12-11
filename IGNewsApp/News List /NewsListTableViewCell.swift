@@ -9,9 +9,12 @@ import UIKit
 
 class NewsListTableViewCell: BaseTableViewCell<TopNews> {
 
+    // MARK: - Outlets
+
     @IBOutlet weak var headlineImageView: UIImageView!
     @IBOutlet weak var newsTitleLabel: UILabel!
-        
+    @IBOutlet weak var authorLabel: UILabel!
+    
     override var datasource: TopNews! {
         didSet {
             setupImageView()
@@ -20,6 +23,7 @@ class NewsListTableViewCell: BaseTableViewCell<TopNews> {
     
     func setupImageView() {
         newsTitleLabel.text = datasource.title
+        authorLabel.text = "By: \(datasource.authors?.first?.name ?? "")"
         let imageString = datasource?.headlineImageUrl ?? ""
         if let url = URL(string: imageString) {
             if let data = try? Data(contentsOf: url) {

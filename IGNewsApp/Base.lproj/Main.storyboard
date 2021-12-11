@@ -96,7 +96,7 @@
                                             <action selector="onClickButtonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMj-kB-M3r"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Drc-uk-HJd">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Drc-uk-HJd">
                                         <rect key="frame" x="0.0" y="387" width="414" height="116"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BREAKING NEWS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP0-bB-XA3">
@@ -159,6 +159,7 @@
                     <navigationItem key="navigationItem" id="GgB-0M-Dzo"/>
                     <connections>
                         <outlet property="breakingNewsLabel" destination="NSk-Fh-V7P" id="efO-94-C5m"/>
+                        <outlet property="breakingNewsView" destination="Drc-uk-HJd" id="EvB-RF-fai"/>
                         <outlet property="newsButtonFour" destination="FBh-Ld-F4r" id="teh-aX-PBq"/>
                         <outlet property="newsButtonOne" destination="hO9-lR-0hh" id="Onz-rV-skx"/>
                         <outlet property="newsButtonThree" destination="lOt-hy-GCs" id="b1h-yV-wib"/>

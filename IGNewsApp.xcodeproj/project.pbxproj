@@ -23,7 +23,6 @@
 		CE68C771276485AD00CA0146 /* NewsListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68C76F276485AC00CA0146 /* NewsListingViewController.xib */; };
 		CE68C774276485C700CA0146 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C772276485C700CA0146 /* NewsListTableViewCell.swift */; };
 		CE68C775276485C700CA0146 /* NewsListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68C773276485C700CA0146 /* NewsListTableViewCell.xib */; };
-		CE68C77727648A7200CA0146 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C77627648A7200CA0146 /* Extensions.swift */; };
 		CE68C7792764958800CA0146 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C7782764958800CA0146 /* BaseTableViewCell.swift */; };
 		CE68C77C2764E33000CA0146 /* NewsDiscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C77A2764E33000CA0146 /* NewsDiscriptionViewController.swift */; };
 		CE68C77D2764E33000CA0146 /* NewsDiscriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE68C77B2764E33000CA0146 /* NewsDiscriptionViewController.xib */; };
@@ -67,7 +66,6 @@
 		CE68C76F276485AC00CA0146 /* NewsListingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListingViewController.xib; sourceTree = "<group>"; };
 		CE68C772276485C700CA0146 /* NewsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewCell.swift; sourceTree = "<group>"; };
 		CE68C773276485C700CA0146 /* NewsListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListTableViewCell.xib; sourceTree = "<group>"; };
-		CE68C77627648A7200CA0146 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CE68C7782764958800CA0146 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		CE68C77A2764E33000CA0146 /* NewsDiscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDiscriptionViewController.swift; sourceTree = "<group>"; };
 		CE68C77B2764E33000CA0146 /* NewsDiscriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDiscriptionViewController.xib; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				CE68C76B276455F000CA0146 /* Constants.swift */,
-				CE68C77627648A7200CA0146 /* Extensions.swift */,
 				CE68C7782764958800CA0146 /* BaseTableViewCell.swift */,
 			);
 			path = Utils;
@@ -327,7 +324,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE68C7332763976D00CA0146 /* ViewController.swift in Sources */,
-				CE68C77727648A7200CA0146 /* Extensions.swift in Sources */,
 				CE68C770276485AD00CA0146 /* NewsListingViewController.swift in Sources */,
 				CE68C774276485C700CA0146 /* NewsListTableViewCell.swift in Sources */,
 				CE68C72F2763976D00CA0146 /* AppDelegate.swift in Sources */,
