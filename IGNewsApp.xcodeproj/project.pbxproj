@@ -16,6 +16,9 @@
 		CE68C7462763977200CA0146 /* IGNewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C7452763977200CA0146 /* IGNewsAppTests.swift */; };
 		CE68C7502763977200CA0146 /* IGNewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C74F2763977200CA0146 /* IGNewsAppUITests.swift */; };
 		CE68C7522763977200CA0146 /* IGNewsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C7512763977200CA0146 /* IGNewsAppUITestsLaunchTests.swift */; };
+		CE68C768276455CE00CA0146 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C767276455CE00CA0146 /* ResponseModel.swift */; };
+		CE68C76A276455DF00CA0146 /* Service Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C769276455DF00CA0146 /* Service Manager.swift */; };
+		CE68C76C276455F000CA0146 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C76B276455F000CA0146 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		CE68C74B2763977200CA0146 /* IGNewsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGNewsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE68C74F2763977200CA0146 /* IGNewsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGNewsAppUITests.swift; sourceTree = "<group>"; };
 		CE68C7512763977200CA0146 /* IGNewsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGNewsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE68C767276455CE00CA0146 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		CE68C769276455DF00CA0146 /* Service Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service Manager.swift"; sourceTree = "<group>"; };
+		CE68C76B276455F000CA0146 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		CE68C72D2763976D00CA0146 /* IGNewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE68C766276455B600CA0146 /* Utils */,
+				CE68C765276455A900CA0146 /* Service Manager */,
+				CE68C7642764559F00CA0146 /* Model */,
 				CE68C72E2763976D00CA0146 /* AppDelegate.swift */,
 				CE68C7302763976D00CA0146 /* SceneDelegate.swift */,
 				CE68C7322763976D00CA0146 /* ViewController.swift */,
@@ -125,6 +134,30 @@
 				CE68C7512763977200CA0146 /* IGNewsAppUITestsLaunchTests.swift */,
 			);
 			path = IGNewsAppUITests;
+			sourceTree = "<group>";
+		};
+		CE68C7642764559F00CA0146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE68C767276455CE00CA0146 /* ResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE68C765276455A900CA0146 /* Service Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CE68C769276455DF00CA0146 /* Service Manager.swift */,
+			);
+			path = "Service Manager";
+			sourceTree = "<group>";
+		};
+		CE68C766276455B600CA0146 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CE68C76B276455F000CA0146 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +293,10 @@
 			files = (
 				CE68C7332763976D00CA0146 /* ViewController.swift in Sources */,
 				CE68C72F2763976D00CA0146 /* AppDelegate.swift in Sources */,
+				CE68C768276455CE00CA0146 /* ResponseModel.swift in Sources */,
+				CE68C76A276455DF00CA0146 /* Service Manager.swift in Sources */,
 				CE68C7312763976D00CA0146 /* SceneDelegate.swift in Sources */,
+				CE68C76C276455F000CA0146 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

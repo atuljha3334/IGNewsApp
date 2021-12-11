@@ -1,24 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IGNewsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNg-Yk-sd2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hO9-lR-0hh">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="204.5"/>
+                                        <color key="backgroundColor" red="0.94757976399999999" green="0.27058823529999998" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="NEWS">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="Cochin"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickButtonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g43-kv-RAx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMv-8P-HMM">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="204.5"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="NEWS">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="Cochin"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickButtonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qim-ES-RNB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBh-Ld-F4r">
+                                        <rect key="frame" x="207" y="204.5" width="207" height="204.5"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="NEWS">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="Cochin"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickButtonFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IzG-Hg-aAc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOt-hy-GCs">
+                                        <rect key="frame" x="0.0" y="204.5" width="207" height="204.5"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="NEWS">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="Cochin"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickButtonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMj-kB-M3r"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Drc-uk-HJd">
+                                        <rect key="frame" x="0.0" y="409" width="414" height="122.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BREAKING NEWS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP0-bB-XA3">
+                                                <rect key="frame" x="139" y="51" width="135" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="BP0-bB-XA3" firstAttribute="centerY" secondItem="Drc-uk-HJd" secondAttribute="centerY" id="6Ax-2m-M1D"/>
+                                            <constraint firstItem="BP0-bB-XA3" firstAttribute="centerX" secondItem="Drc-uk-HJd" secondAttribute="centerX" id="nH0-fh-oxY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="lMv-8P-HMM" firstAttribute="height" secondItem="hO9-lR-0hh" secondAttribute="height" id="28m-X4-BxR"/>
+                                    <constraint firstItem="lOt-hy-GCs" firstAttribute="leading" secondItem="UNg-Yk-sd2" secondAttribute="leading" id="516-rZ-cBe"/>
+                                    <constraint firstItem="FBh-Ld-F4r" firstAttribute="height" secondItem="lMv-8P-HMM" secondAttribute="height" id="63s-h5-RtG"/>
+                                    <constraint firstItem="hO9-lR-0hh" firstAttribute="leading" secondItem="UNg-Yk-sd2" secondAttribute="leading" id="A0V-Hc-XYd"/>
+                                    <constraint firstItem="hO9-lR-0hh" firstAttribute="width" secondItem="UNg-Yk-sd2" secondAttribute="width" multiplier="0.5" id="Hjw-dr-eqb"/>
+                                    <constraint firstItem="Drc-uk-HJd" firstAttribute="leading" secondItem="UNg-Yk-sd2" secondAttribute="leading" id="JGU-y8-Ptr"/>
+                                    <constraint firstItem="Drc-uk-HJd" firstAttribute="height" secondItem="lOt-hy-GCs" secondAttribute="height" multiplier="0.6" id="Mnk-VW-45s"/>
+                                    <constraint firstItem="FBh-Ld-F4r" firstAttribute="width" secondItem="lMv-8P-HMM" secondAttribute="width" id="N0h-ia-UXp"/>
+                                    <constraint firstItem="hO9-lR-0hh" firstAttribute="height" secondItem="UNg-Yk-sd2" secondAttribute="height" multiplier="0.25" id="PX3-aq-HoD"/>
+                                    <constraint firstAttribute="trailing" secondItem="FBh-Ld-F4r" secondAttribute="trailing" id="UsE-a2-ZAj"/>
+                                    <constraint firstItem="lOt-hy-GCs" firstAttribute="height" secondItem="hO9-lR-0hh" secondAttribute="height" id="W8T-yJ-Y5Y"/>
+                                    <constraint firstItem="lOt-hy-GCs" firstAttribute="top" secondItem="hO9-lR-0hh" secondAttribute="bottom" id="Ydb-43-8VU"/>
+                                    <constraint firstItem="lMv-8P-HMM" firstAttribute="width" secondItem="hO9-lR-0hh" secondAttribute="width" id="eo5-gI-CiP"/>
+                                    <constraint firstItem="Drc-uk-HJd" firstAttribute="top" secondItem="FBh-Ld-F4r" secondAttribute="bottom" id="hBy-3e-8fY"/>
+                                    <constraint firstAttribute="trailing" secondItem="lMv-8P-HMM" secondAttribute="trailing" id="pqa-0P-L8O"/>
+                                    <constraint firstItem="hO9-lR-0hh" firstAttribute="top" secondItem="UNg-Yk-sd2" secondAttribute="top" id="qL2-sg-6ro"/>
+                                    <constraint firstItem="FBh-Ld-F4r" firstAttribute="top" secondItem="lMv-8P-HMM" secondAttribute="bottom" id="qut-XA-pZd"/>
+                                    <constraint firstItem="lOt-hy-GCs" firstAttribute="width" secondItem="hO9-lR-0hh" secondAttribute="width" id="sjy-nc-uFF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Drc-uk-HJd" secondAttribute="trailing" id="t3g-qq-Xm9"/>
+                                    <constraint firstItem="lMv-8P-HMM" firstAttribute="top" secondItem="UNg-Yk-sd2" secondAttribute="top" id="uBo-0f-gSI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UNg-Yk-sd2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CeY-ze-c3S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UNg-Yk-sd2" secondAttribute="bottom" id="WMT-xO-tZz"/>
+                            <constraint firstItem="UNg-Yk-sd2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fU8-Jl-gHb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UNg-Yk-sd2" secondAttribute="trailing" id="y97-ps-4p6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="newsButtonFour" destination="FBh-Ld-F4r" id="teh-aX-PBq"/>
+                        <outlet property="newsButtonOne" destination="hO9-lR-0hh" id="Onz-rV-skx"/>
+                        <outlet property="newsButtonThree" destination="lOt-hy-GCs" id="b1h-yV-wib"/>
+                        <outlet property="newsButtonTwo" destination="lMv-8P-HMM" id="UGL-A0-2a5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
