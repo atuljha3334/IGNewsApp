@@ -23,8 +23,8 @@ struct TopNews: Codable {
     let instruments: [String]?
     let tags: [String]?
     let categories: [String]?
-    let displayTimestamp: Int64?
-    let lastUpdatedTimestamp: Int64?
+    let displayTimestamp: Int?
+    let lastUpdatedTimestamp: Int?
 }
 
 struct DailyBriefings: Codable {
