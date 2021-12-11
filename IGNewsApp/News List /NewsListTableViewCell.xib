@@ -20,11 +20,12 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JkR-Dk-upN">
                         <rect key="frame" x="0.0" y="0.0" width="383" height="88"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5CD-yR-tUS">
-                                <rect key="frame" x="8" y="9.5" width="76.5" height="69.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5CD-yR-tUS">
+                                <rect key="frame" x="8" y="8.5" width="76.5" height="71"/>
+                                <color key="tintColor" red="0.65731534089999999" green="0.96416083919999995" blue="0.74497377620000005" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgR-qI-91L">
-                                <rect key="frame" x="92.5" y="33.5" width="282.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgR-qI-91L">
+                                <rect key="frame" x="92.5" y="34" width="282.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,14 +53,14 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="imageView" destination="5CD-yR-tUS" id="rNH-gV-LQu"/>
+                <outlet property="headlineImageView" destination="5CD-yR-tUS" id="g9p-YN-lKv"/>
                 <outlet property="newsTitleLabel" destination="EgR-qI-91L" id="a6b-hc-F7z"/>
             </connections>
             <point key="canvasLocation" x="183.33333333333334" y="121.875"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="book.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
