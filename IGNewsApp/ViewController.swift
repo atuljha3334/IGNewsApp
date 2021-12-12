@@ -28,6 +28,10 @@ class ViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
     // MARK: - SetupUI
 
     private func setupUI() {

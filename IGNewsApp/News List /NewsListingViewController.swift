@@ -23,10 +23,29 @@ class NewsListingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        segmentView.isHidden = true
+        if typeOfNews != TypeOfNews.dailyBriefings.rawValue {
+            segmentView.isHidden = true
+        } else {
+            segmentView.isHidden = false
+        }
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "NewsListTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsListTableViewCell")
+    }
+    
+    // MARK: - Segment Setup
+
+    @IBAction func segmentSelectionAction(_ sender: UISegmentedControl) {
+        if segmentView.selectedSegmentIndex == 0 {
+            newsListData = responseData?.dailyBriefings?.eu
+            tableView.reloadData()
+        } else if segmentView.selectedSegmentIndex == 1 {
+            newsListData = responseData?.dailyBriefings?.asia
+            tableView.reloadData()
+        } else if segmentView.selectedSegmentIndex == 2 {
+            newsListData = responseData?.dailyBriefings?.us
+            tableView.reloadData()
+        }
     }
 }
 
