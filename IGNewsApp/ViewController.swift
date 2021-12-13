@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }
     // MARK: - SetupUI
 
-    private func setupUI() {
+    func setupUI() {
         if !(newsData?.breakingNews == "" || newsData?.breakingNews == nil) {
             breakingNewsView.isHidden = false
         }
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     
     // MARK: - Service Call
 
-    private func newsServiceInvoke() {
+    func newsServiceInvoke() {
         ServiceManager.shared.newsServiceCall { result in
             self.newsData = result
             self.setupBreakingNews(data: self.newsData)
@@ -50,9 +50,9 @@ class ViewController: UIViewController {
         }
     }
     
-    private func setupBreakingNews(data: NewsResponseModel?) {
+    func setupBreakingNews(data: NewsResponseModel?) {
         DispatchQueue.main.async {
-            self.breakingNewsLabel.text = data?.breakingNews
+            self.breakingNewsLabel.text = data?.breakingNews ?? ""
         }
     }
     

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE02500E2765BE1300BD0A7C /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02500D2765BE1300BD0A7C /* ViewControllerTests.swift */; };
+		CE0250102765BF4900BD0A7C /* NewsListingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02500F2765BF4900BD0A7C /* NewsListingViewControllerTests.swift */; };
 		CE68C72F2763976D00CA0146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C72E2763976D00CA0146 /* AppDelegate.swift */; };
 		CE68C7312763976D00CA0146 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C7302763976D00CA0146 /* SceneDelegate.swift */; };
 		CE68C7332763976D00CA0146 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68C7322763976D00CA0146 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE02500D2765BE1300BD0A7C /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		CE02500F2765BF4900BD0A7C /* NewsListingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListingViewControllerTests.swift; sourceTree = "<group>"; };
 		CE68C72B2763976D00CA0146 /* IGNewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGNewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE68C72E2763976D00CA0146 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE68C7302763976D00CA0146 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				CE68C7452763977200CA0146 /* IGNewsAppTests.swift */,
+				CE02500D2765BE1300BD0A7C /* ViewControllerTests.swift */,
+				CE02500F2765BF4900BD0A7C /* NewsListingViewControllerTests.swift */,
 			);
 			path = IGNewsAppTests;
 			sourceTree = "<group>";
@@ -340,7 +346,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE02500E2765BE1300BD0A7C /* ViewControllerTests.swift in Sources */,
 				CE68C7462763977200CA0146 /* IGNewsAppTests.swift in Sources */,
+				CE0250102765BF4900BD0A7C /* NewsListingViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
